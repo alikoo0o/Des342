@@ -13,6 +13,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   </head>
   <body class="Town">
+    <main>
     <div class="container">
 
     </div>
@@ -21,9 +22,20 @@
     </div>
       <div class="grassbottom"></div>
     </div>
+    <section id="page2">
+I'm on page two.
+    </section>
+    </main>
     <!-- <div class="news"> 
     <img src="images/bao.png" alt=" a smiley bao bun mans a news stand her name is angela" style="height: 400px;">
    </div> -->
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script>
+     $('#flowerman').click(function(){
+       $('#flowerman img').css('transform','translateX(110vw)')
+       window.location.hash = "#page2";
+     })
+   </script>
     <script>
       var theFlowerman = document.querySelector('#flower')
       var container = document.querySelector('#flowercontainer')
@@ -38,5 +50,6 @@
         theFlowerman.style.transform = translate3dValue
       }
     </script>
+
   </body>
 </html>
