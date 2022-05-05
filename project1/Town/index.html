@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Explore!</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+  </head>
+  <body class="Town">
+    <div class="container">
 
-
-</head>
-<body class="Town">
-<div class="container">
-    <div class="sky">
-        <img src="images/sky.png" alt="sky" style="width: 100%; height: 100%;"></div> </div>
-         <div id="flowercontainer">
-            <div id="flowerman"> <img src="images/flower.png" alt="walking flower animation" style="height: 200px ;">
     </div>
-   </div>
-   <div class="grassbottom"></div>
-
-   <div class="news"> 
+    <div id="flowercontainer">
+      <div id="flowerman"><img src="images/flower.png" alt="walking flower animation" /></div>
+    </div>
+      <div class="grassbottom"></div>
+    </div>
+    <!-- <div class="news"> 
     <img src="images/bao.png" alt=" a smiley bao bun mans a news stand her name is angela" style="height: 400px;">
-   </div>
+   </div> -->
+    <script>
+      var theFlowerman = document.querySelector('#flower')
+      var container = document.querySelector('#flowercontainer')
 
+      container.addEventListener('click', getClickPosition, false)
 
-   <script>
-       var theFlowerman = document.querySelector('#flower');
-       var container = document.querySelector('#flowercontainer');
+      function getClickPosition(e) {
+        var xPosition = e.clientX
+        var yPosition = e.clientY
 
-    container.addEventListener("click", getClickPosition, false);
-
-    function getClickPosition(e) {
-        var xPosition = e.clientX;
-        var yPosition = e.clientY;
-
-        var translate3dValue = "translate3d(" + xPosition + "px," + yPosition + "px,,0)";
-        theFlowerman.style.transform = translate3dValue;
-
-    }
-  </script>
-
-</body>
+        var translate3dValue = 'translate3d(' + xPosition + 'px,' + yPosition + 'px,,0)'
+        theFlowerman.style.transform = translate3dValue
+      }
+    </script>
+  </body>
 </html>
