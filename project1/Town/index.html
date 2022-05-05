@@ -14,42 +14,29 @@
   </head>
   <body class="Town">
     <main>
-    <div class="container">
-
-    </div>
-    <div id="flowercontainer">
-      <div id="flowerman"><img src="images/flower.png" alt="walking flower animation" /></div>
-    </div>
-      <div class="grassbottom"></div>
-    </div>
-    <section id="page2">
-I'm on page two.
-    </section>
+      <div class="container">
+        <div id="flowercontainer">
+          <div id="flowerman"><img src="images/flower.png" alt="walking flower animation" /></div>
+        </div>
+        <div class="grassbottom"></div>
+      </div>
+      <section id="page2">I'm on page two.</section>
     </main>
     <!-- <div class="news"> 
     <img src="images/bao.png" alt=" a smiley bao bun mans a news stand her name is angela" style="height: 400px;">
    </div> -->
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-   <script>
-     $('#flowerman').click(function(){
-       $('#flowerman img').css('transform','translateX(110vw)')
-       window.location.hash = "#page2";
-     })
-   </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
-      var theFlowerman = document.querySelector('#flower')
-      var container = document.querySelector('#flowercontainer')
+      $('#flowerman').click(function () {
+        $('#flowerman img').css('transform', 'translateX(110vw)')
 
-      container.addEventListener('click', getClickPosition, false)
-
-      function getClickPosition(e) {
-        var xPosition = e.clientX
-        var yPosition = e.clientY
-
-        var translate3dValue = 'translate3d(' + xPosition + 'px,' + yPosition + 'px,,0)'
-        theFlowerman.style.transform = translate3dValue
-      }
+        setTimeout(function () {
+          $('.container').css('width', '0')
+          $('.flowercontainer').css('width', '0')
+          $('.grassbottom').css('width', '0')
+          window.location.hash = '#page2'
+        }, 2000)
+      })
     </script>
-
   </body>
 </html>
