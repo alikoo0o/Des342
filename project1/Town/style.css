@@ -3,4 +3,28 @@ body{
     font-family: 'Nanum Pen Script', cursive;
     font-size: 20pt;
     color: rgba(51, 51, 51, 0.724);
+    background-color: rgb(156, 200, 236);
+}
+.sky{
+    margin: auto;
+    position: relative;
+    z-index: 2;
+
+
+}
+.flower{
+    width: 100%;
+    height: 200px;
+   /* background-color: black; */
+    margin-top: -205px;
+    position: relative;
+    z-index: 4;
+}
+.grassbottom{
+    width:120%;
+    height: 600px;
+    margin-left:-20px;
+    background-color: rgb(137, 188, 35);
+    position: relative;
+    z-index: 1;
 }
