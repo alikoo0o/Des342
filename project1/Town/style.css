@@ -47,6 +47,7 @@ body {
 #flowerman {
   transform: translate3d(50px, 50px, 0);
 }
+<<<<<<< HEAD
 #arrow{
     position: absolute;
     bottom: 13vh;
@@ -64,12 +65,18 @@ a{
     color: rgb(64, 64, 64);
     text-decoration: none;
 }
+=======
+>>>>>>> cb85930e4ef1e7ab06b81c3a92def34acfcbc7b2
 
 #flowerman img {
   animation-timing-function: linear;
   transition: 3s;
+<<<<<<< HEAD
 } 
 /*
+=======
+}
+>>>>>>> cb85930e4ef1e7ab06b81c3a92def34acfcbc7b2
 #page2 {
   background-color: firebrick;
   width: 100vw;
@@ -79,4 +86,8 @@ main {
   width: 200vw;
   height: 100vh;
   display: flex;
+<<<<<<< HEAD
 } */
+=======
+}
+>>>>>>> cb85930e4ef1e7ab06b81c3a92def34acfcbc7b2
