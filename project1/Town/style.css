@@ -80,6 +80,11 @@ a{
 
 
 } 
+.news {
+ position: absolute;
+ left: 25vw;
+ bottom: 5vh;
+}
 
 /*
 #flowerman img {
