@@ -13,30 +13,37 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
   </head>
   <body class="Town">
+
     <div class="container">
 
     </div>
     <div id="flowercontainer">
-      <div id="flowerman"><img src="images/flower.png" alt="walking flower animation" /></div>
+      <div id="flowerman"><img src="images/flower.png" alt="walking flower animation" style="width: 160px;"></div>
     </div>
       <div class="grassbottom"></div>
     </div>
-    <!-- <div class="news"> 
+    <div id="arrow">
+         <img src="images/arrow.png" alt="arrow button" style="width: 200px"> 
+         <a href="town2/index.html"><h1>to Coffee shop!</h1>
+    </a>
+    </div>
+ <main>
+      <!--
+ <div class="news"> 
     <img src="images/bao.png" alt=" a smiley bao bun mans a news stand her name is angela" style="height: 400px;">
    </div> -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script>
-      var theFlowerman = document.querySelector('#flower')
-      var container = document.querySelector('#flowercontainer')
+      $('#flowerman').click(function () {
+        $('#flowerman img').css('transform', 'translateX(110vw)')
 
-      container.addEventListener('click', getClickPosition, false)
-
-      function getClickPosition(e) {
-        var xPosition = e.clientX
-        var yPosition = e.clientY
-
-        var translate3dValue = 'translate3d(' + xPosition + 'px,' + yPosition + 'px,,0)'
-        theFlowerman.style.transform = translate3dValue
-      }
+        setTimeout(function () {
+          $('.container').css('width', '0')
+          $('.flowercontainer').css('width', '0')
+          $('.grassbottom').css('width', '0')
+          window.location.hash = '#page2'
+        }, 1000)
+      })
     </script>
   </body>
 </html>
