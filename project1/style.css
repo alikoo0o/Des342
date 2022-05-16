@@ -1,0 +1,28 @@
+body {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 12pt;
+    color: rgba(51, 51, 51, 0.724);
+    background-color: rgb(156, 200, 236);
+    margin: 0;
+  }
+.container {
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    overflow: hidden;
+    background: url('openscreen.gif');
+    background-size: cover;
+}
+.start{
+    color: white;
+    text-decoration: none;
+   position: relative;
+}
+
+h1{
+    bottom: 19vh ;
+    margin-left: 50vw;
+    font-size: 30px;
+    position: absolute;
+    z-index: 5;
+}
