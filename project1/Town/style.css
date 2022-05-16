@@ -30,7 +30,7 @@ body {
   position: relative;
   z-index: 4;
   position: absolute;
-  bottom: 10vh;
+  bottom: 5vh;
   left: 0;
 }
 .grassbottom {
@@ -44,10 +44,11 @@ body {
   z-index: 2;
 }
 
-#flowerman {
+/*#flowerman {
   transform: translate3d(50px, 50px, 0);
 }
-<<<<<<< HEAD
+*/
+
 #arrow{
     position: absolute;
     bottom: 13vh;
@@ -60,23 +61,28 @@ h1{
     margin-left: 40px;
     font-size: 20px;
 }
+#flowerman{
+    animation-duration: 3s;
+    animation: slide;
+}
+
+ @keyframes slide {
+        from { margin-left: 0%; }
+        to { margin-left: calc(100% - var(--w, 150px)); }
+      }
+
+
 /*
 a{
     color: rgb(64, 64, 64);
     text-decoration: none;
 }
-=======
->>>>>>> cb85930e4ef1e7ab06b81c3a92def34acfcbc7b2
 
 #flowerman img {
   animation-timing-function: linear;
   transition: 3s;
-<<<<<<< HEAD
 } 
 /*
-=======
-}
->>>>>>> cb85930e4ef1e7ab06b81c3a92def34acfcbc7b2
 #page2 {
   background-color: firebrick;
   width: 100vw;
@@ -86,8 +92,4 @@ main {
   width: 200vw;
   height: 100vh;
   display: flex;
-<<<<<<< HEAD
 } */
-=======
-}
->>>>>>> cb85930e4ef1e7ab06b81c3a92def34acfcbc7b2
