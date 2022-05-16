@@ -51,7 +51,7 @@ body {
 
 #arrow{
     position: absolute;
-    bottom: 13vh;
+    bottom: 6vh;
     left: 80vw;
     z-index: 3;
 }
@@ -69,13 +69,18 @@ h1{
     transform: translateX (100%);
 }
 
-/*
+
 a{
     color: rgb(64, 64, 64);
     text-decoration: none;
+    bottom: 6vh;
+    left: 80vw;
+    position: absolute;
+    z-index: 5;
+
 
 } 
-*/ 
+
 /*
 #flowerman img {
   animation-timing-function: linear;
