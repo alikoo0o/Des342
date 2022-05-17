@@ -28,9 +28,21 @@ function clickCounter1() {
     }
     document.getElementById("result1").innerHTML =  sessionStorage.clickcount1 ;
   } else {
-    document.getElementById("result1").innerHTML = "Sorry, your browser does not support web storage...";
+    document.getElementById("result1").innerHTML = "Sorry Babes, your browser does not support web storage...";
   }
 }
+</script>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (window.getComputedStyle(x).display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+
 </script>
 
   </head>
@@ -54,7 +66,7 @@ function clickCounter1() {
  <div class="news"> 
     <img src="images/bao.png" alt=" a smiley bao bun mans a news stand her name is angela" style="width: 570px;">
    </div>
-   <img class="paper" src="images/newspaper.png" alt="how to play instruction newpaper" style="width:300px;"> 
+   <img id="myDIV" class="paper" src="images/newspaper.png" alt="how to play instruction newpaper" style="width:1200px;"> 
 
 <div class="counter"> 
     
@@ -68,6 +80,8 @@ function clickCounter1() {
 
 
 <p><img class="button button1" onclick="clickCounter1()" src="https://images.unsplash.com/photo-1589517575452-18a6d4c3f2e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8eWVsbG93JTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="flower" style="width: 50px;" ></p>
+
+<button onclick="myFunction()"> The Tutorial Times </button>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -197,7 +211,18 @@ a{
     color: white;
     font-size: 26pt;
 }
-
+.paper{
+    position: absolute;
+    bottom: 10vh;
+    left: 5vw;
+    display: none;
+}
+button{
+    position: absolute;
+    bottom: 12vh;
+    left: 30vw; 
+    z-index: 5;
+}
     </style>
   </body>
 </html>
