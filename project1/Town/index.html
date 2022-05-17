@@ -64,7 +64,12 @@ function myFunction() {
  <main>
       
  <div class="news"> 
-    <img src="images/bao.png" alt=" a smiley bao bun mans a news stand her name is angela" style="width: 570px;">
+    <img class="bao" src="images/bao.png" alt=" a smiley bao bun mans a news stand her name is angela" style="width: 570px;">
+    <p><img class="button button1" onclick="clickCounter1()" src="images/roof.png" alt="flower" style="width: 50px;" ></p>
+<p><img class="button button2" onclick="clickCounter1()" src="images/soda.png" alt="flower" style="width: 50px;" ></p>
+<p><img class="button button3" onclick="clickCounter1()" src="images/topshelf.png" alt="flower" style="width: 50px;" ></p>
+<p><img class="button button4" onclick="clickCounter1()" src="images/botshelf.png" alt="flower" style="width: 50px;" ></p>
+<p><img class="button button5" onclick="clickCounter1()" src="images/midshelf.png" alt="flower" style="width: 50px;" ></p>
    </div>
    <img id="myDIV" class="paper" src="images/newspaper.png" alt="how to play instruction newpaper" style="width:1200px;"> 
 
@@ -79,7 +84,8 @@ function myFunction() {
 </div>
 
 
-<p><img class="button button1" onclick="clickCounter1()" src="https://images.unsplash.com/photo-1589517575452-18a6d4c3f2e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8eWVsbG93JTIwZmxvd2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80" alt="flower" style="width: 50px;" ></p>
+
+
 
 <button onclick="myFunction()"> The Tutorial Times </button>
 
@@ -213,15 +219,38 @@ a{
 }
 .paper{
     position: absolute;
-    bottom: 10vh;
+    bottom: 8vh;
     left: 5vw;
     display: none;
 }
 button{
     position: absolute;
-    bottom: 12vh;
+    bottom: 13vh;
     left: 30vw; 
     z-index: 5;
+}
+.button1{
+
+}
+.button2{
+    
+}
+.button3{
+    
+}
+.button4{
+    
+}
+.button5{
+    
+}
+.bao{
+    margin-top: 40px;
+}
+.news{
+    width: 570px;
+    height: 600px;
+    background-color: blue;
 }
     </style>
   </body>
