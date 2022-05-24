@@ -178,9 +178,19 @@ h1{
     font-size: 20px;
     color: black;
 }
+
+.flowercontainer {
+    z-index:1;
+    display:inline-block;
+
+}
 .flowerman img{
     width: 160px;
     transition: transform 1s;
+    z-index:-1;
+}
+.button4 img {
+  z-index:90;
 }
 .flowercontainer:hover .flowerman {
     transform: translateX (100%);
