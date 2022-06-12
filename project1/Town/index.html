@@ -233,7 +233,7 @@ a{
 }
 
 .collect{
-    margin-top: -110px;
+    margin-top: -135px;
     margin-left: 60px;
     color: white;
     font-size: 26pt;
@@ -296,5 +296,21 @@ button{
         $(this).css('display','none')
       })
     </script>
+        <script>
+ 
+          $(document).ready(function() {
+              var obj = document.createElement("audio");
+              obj.src="ding.mp3";
+              obj.volume=0.10;
+              obj.autoPlay=false;
+              obj.preLoad=true;       
+       
+              $(".button").click(function() {
+                  obj.play();
+              });
+       
+          });
+       
+      </script>
   </body>
 </html>
