@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
     <!-- click counter -->
-<script>
 
+<script>
 function clickCounter1() {
   $('#resetSession').click(function(){
     localStorage.clickcount1 = 0
@@ -35,20 +35,31 @@ function clickCounter1() {
     document.getElementById("result1").innerHTML = "Sorry Babes, your browser does not support web storage...";
   }
 }
-
 </script>
+
 
 <script>
 function myFunction() {
-  var x = document.getElementById("myDIV");
+  var x = document.getElementById("myPaper");
   if (window.getComputedStyle(x).display === "none") {
     x.style.display = "block";
   } else {
     x.style.display = "none";
   }
 }
-
 </script>
+
+
+<script>
+  function myHamburger() {
+    var x = document.getElementById("menu");
+    if (window.getComputedStyle(x).display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
 
 
   </head>
@@ -83,7 +94,7 @@ function myFunction() {
 
 <p><img class="button button5 flower-button" onclick="clickCounter1()" src="images/midshelf.png" alt="flower" style="width: 50px;" ></p>
 </div>
-   <img id="myDIV" class="paper" src="images/newspaper.png" alt="how to play instruction newpaper" style="width:1200px;"> 
+   <img id="myPaper" class="paper" src="images/newspaper.png" alt="how to play instruction newpaper" style="width:1200px;"> 
 
 <div class="counter"> 
     
@@ -97,10 +108,13 @@ function myFunction() {
 </div>
 
 
+<button class="baobutton" onclick="myFunction()"> The Tutorial Times </button>
 
-
-
-<button onclick="myFunction()"> The Tutorial Times </button>
+<button class="hamburger" onclick="myHamburger()"> <img src="../Town/images/hamburger.png" alt="hamburger menu" style="width: 70px;"></button>
+<div id="menu"> <img src="images/menu.png" alt="menu">
+  <button id="mute" > <img src="town2/images/mute.png" alt="mute button" style="width: 100px;"></button>
+  <button id="reset" onclick="deleteItems()"> <img src="town2/images/reset.png" alt="mute button" style="width: 100px;"></button>
+</div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
@@ -246,7 +260,7 @@ a{
     display: none;
     z-index: 4;
 }
-button{
+.baobutton{
     position: absolute;
     bottom: 13vh;
     left: 30vw; 
@@ -288,6 +302,37 @@ button{
 .news{
     width: 570px;
     height: 600px;
+
+}
+.hamburger{
+  position: absolute;
+  margin-left: 92%;
+  bottom: 90vh;
+  background-color: rgba(156, 200, 236, 0);
+  border: none;
+  padding: 15px 32px;
+}
+#menu{
+  position: absolute;
+  margin-left: 70%;
+  bottom: 80vh;
+  display: none;
+}
+#mute{
+  position: absolute;
+  margin-left: -355px;
+  margin-top: 35px;
+  background-color: rgba(156, 200, 236, 0);
+  border: none;
+  padding: 15px 32px;
+}
+#reset{
+  position: absolute;
+  margin-left: -210px;
+  margin-top: 35px;
+  background-color: rgba(156, 200, 236, 0);
+  border: none;
+  padding: 15px 32px;
 
 }
     </style>

@@ -37,7 +37,16 @@ function clickCounter1() {
 }
 
 </script>
-
+<script>
+  function myHamburger() {
+    var x = document.getElementById("menu");
+    if (window.getComputedStyle(x).display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+  </script>
 <script>
 function myFunction() {
   var x = document.getElementById("myDIV");
@@ -59,7 +68,9 @@ function stepupfunction() {
 }
  }
 </script>
+<script>
 
+</script>
 <script>
   function moveGuy(){
 
@@ -135,7 +146,11 @@ document.getElementById("mobile").style.left = "0px"
 </div>
 
 
-
+<button class="hamburger" onclick="myHamburger()"> <img src="../images/hamburger.png" alt="hamburger menu" style="width: 70px;"></button>
+<div id="menu"> <img src="../images/menu.png" alt="menu">
+  <button id="mute" > <img src="images/mute.png" alt="mute button" style="width: 100px;"></button>
+  <button id="reset" onclick="deleteItems()"> <img src="images/reset.png" alt="mute button" style="width: 100px;"></button>
+</div>
 
 
 
@@ -370,6 +385,38 @@ button{
     margin-left: 542px;
     position: absolute;
     z-index: 3;
+}
+
+.hamburger{
+  position: absolute;
+  margin-left: 60%;
+  bottom: 90vh;
+  background-color: rgba(156, 200, 236, 0);
+  border: none;
+  padding: 15px 32px;
+  display: inline-block;
+}
+#menu{
+  position: absolute;
+  margin-left: 70%;
+  bottom: 80vh;
+  display: none;
+}
+#mute{
+  position: absolute;
+  margin-left: -495px;
+  bottom: 5vh;
+  background-color: rgba(156, 200, 236, 0);
+  border: none;
+  padding: 15px 32px;
+}
+#reset{
+  position: absolute;
+  margin-left: -340px;
+  bottom: 5vh;
+  background-color: rgba(156, 200, 236, 0);
+  border: none;
+  padding: 15px 32px;
 }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
