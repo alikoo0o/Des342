@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Explore!</title>
+    <title>Finish!</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,23 +15,62 @@
   <body class="town2">
 
     <div class="container"> </div>
-
+   <!--
     <div class="flowercontainer">
       <div class="flowerman"><img src="../images/flower.png" alt="walking flower animation" style="width: 160px;"></div>
     </div>
-
+-->
       <div class="grassbottom"></div>
     </div>
-
+<div class="mimis"> <img src="mimis.png" alt="mimi is so happy now" style="width: 80%;"></div>
+<div class="speech"> <img src="speech.gif" alt="speech bubble" style="width: 400px;"></div>
+<div class="text"> Thank You!</div>
     <!-- <a href="town2/index.html">      <h1>to flower shop!</h1>   </a>
 <div id="arrow">    
-         <img src="../images/arrow.png" alt="arrow button" style="width: 200px">  -->
+         <img src="../images/arrow.png" alt="arrow button" style="width: 200px">  
   
          <div class="back"> <img src="../images/button.png" alt="back button" style="width: 130px;">
 
-         <a class="backtext" href="../index.html"><h1>back!</h1></a>  </div>
+         <a class="backtext" href="../index.html"><h1>back!</h1></a>  </div>-->
 
 </div>
-
+<style>
+  html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Nanum Pen Script', cursive;
+  font-size: 45pt;
+  color: rgba(31, 0, 117, 0.724);
+  background-color: rgb(156, 200, 236);
+  margin: 0;
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+  background: url('../images/sky.gif');
+  background-size: cover;
+}
+.mimis{
+  position: absolute;
+  margin-left: 28vw;
+  bottom: 0vh;
+  z-index: 5;
+}
+.speech{
+  position: absolute;
+  margin-left: 24vw;
+  bottom: 48vh;
+  z-index: 6;
+}
+.text{
+  position: absolute;
+  margin-left: 28vw;
+  bottom: 64vh;
+  z-index: 7;
+}
+</style>
 </body>
 </html>

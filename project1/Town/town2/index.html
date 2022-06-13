@@ -47,8 +47,19 @@ function myFunction() {
     x.style.display = "none";
   }
 }
-
 </script>
+<script>   
+function stepupfunction() {
+  var num = document.getElementById("result1");
+  num.stepUp(1);
+  store.set('putAKeyHere', num.value);
+  if (localStorage.clickcount1 = 5) {    
+  } else {
+    window.location.replace('https://alikoo0o.github.io/Des342/project1/Town/town3/index.html');
+}
+ }
+</script>
+
 <script>
   function moveGuy(){
 
@@ -61,7 +72,8 @@ document.getElementById("mobile").style.left = "0px"
 }
 }
 </script>
-  </head>
+
+</head>
   <body class="Town">
 
     <div class="container">
@@ -93,6 +105,22 @@ document.getElementById("mobile").style.left = "0px"
 <p><img class="button button4 flower-button" onclick="clickCounter1()" src="images/shelf.png" alt="flower" style="width: 35px;" ></p>
 
 <p><img class="button button5 flower-button" onclick="clickCounter1()" src="images/pot.png" alt="flower" style="width: 50px;" ></p>
+
+  </div>
+
+  <div class="shop2"> 
+    <img class="cafe" src="images/cafe.png" alt=" milk man raydon invites you into his shop" style="width: 750px;">
+
+      
+<p><img class="button button6 flower-button" onclick="clickCounter1()" src="images/chair.png" alt="flower" style="width: 50px;" ></p>
+
+<p><img class="button button7 flower-button" onclick="clickCounter1()" src="images/door.png" alt="flower" style="width: 50px;" ></p>
+ 
+<p><img class="button button8 flower-button" onclick="clickCounter1()" src="images/banner.png" alt="flower" style="width: 50px;" ></p>
+
+<p><img class="button button9 flower-button" onclick="clickCounter1()" src="images/sign.png" alt="flower" style="width: 45px;" ></p>
+
+<p><img class="button button10 flower-button" onclick="clickCounter1()" src="images/open.png" alt="flower" style="width: 50px;" ></p>
 
   </div>
 <div class="counter"> 
@@ -206,6 +234,7 @@ h1{
     width: 10vw;
     transition: transform 1s;
     z-index:-1;
+    margin-top: 40px;
 }
 .button4 img {
   z-index:90;
@@ -232,7 +261,7 @@ h1{
 } 
 .shop {
  position: absolute;
- left: 58vw;
+ left: 55vw;
  bottom: 3vh;
 }
 
@@ -306,6 +335,41 @@ button{
     width: 570px;
     height: 600px;
 
+}
+.shop2{
+  position: absolute;
+ left: 10vw;
+ bottom: 2vh;
+}
+.button6{
+  margin-top: -140px;
+    margin-left: 360px;
+    position: absolute;
+    z-index: 3;
+}
+.button7{
+  margin-top: -530px;
+    margin-left: 561px;
+    position: absolute;
+    z-index: 3;
+}
+.button8{
+  margin-top: -514px;
+    margin-left: 170px;
+    position: absolute;
+    z-index: 3;
+}
+.button9{
+  margin-top: -608px;
+    margin-left: 411px;
+    position: absolute;
+    z-index: 3;
+}
+.button10{
+  margin-top: -395px;
+    margin-left: 542px;
+    position: absolute;
+    z-index: 3;
 }
     </style>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
